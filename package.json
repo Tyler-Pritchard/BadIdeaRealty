@@ -6,12 +6,15 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser=firefox",
-    "dev": "npm-run-all --parallel devserver watch:sass",
-    "start": "npm-run-all",
+    "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyler-Pritchard/BadIdeaRealty.git"
   },
   "author": "Tyler Pritchard",
   "license": "ISC",
@@ -23,6 +26,9 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "heroku": "^7.28.0",
+    "php": "0.0.1",
     "compile-sass": "^1.0.5"
   }
 }
