@@ -26,6 +26,7 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.7.4",
     "compile-sass": "^1.0.5",
     "heroku": "^7.39.0",
     "php": "0.0.1"
