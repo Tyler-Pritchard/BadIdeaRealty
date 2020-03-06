@@ -18,7 +18,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
     font-size: 3rem; }
@@ -48,7 +48,7 @@ body {
   .heading-4--dark {
     color: #6D5D4B; }
 
-.button {
+.btn {
   background-color: #c69963;
   color: #fff;
   border: none;
@@ -59,7 +59,7 @@ body {
   padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all .2s; }
-  .button:hover {
+  .btn:hover {
     background-color: #B28451; }
 
 .mb-sm {
@@ -112,13 +112,25 @@ body {
 .story__pictures {
   background-color: #c69963;
   grid-column: full-start / col-end 4;
-  display: grid; }
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/hellscape1.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
 
 .story__img--1 {
-  width: 100%; }
+  width: 100%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
 
 .story__img--2 {
-  width: 100%; }
+  width: 115%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  z-index: 20;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
 .story__content {
   background-color: #f9f7f6;
@@ -126,7 +138,7 @@ body {
   padding: 6rem 8vw;
   display: grid;
   align-content: center;
-  justify-items: flex-start; }
+  justify-items: start; }
 
 .story__text {
   font-size: 1.5rem;
