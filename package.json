@@ -19,16 +19,15 @@
   "author": "Tyler Pritchard",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^9.7.4",
     "concat": "^1.0.3",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
-    "autoprefixer": "^9.6.1",
-    "heroku": "^7.28.0",
-    "php": "0.0.1",
-    "compile-sass": "^1.0.5"
+    "compile-sass": "^1.0.5",
+    "heroku": "^7.39.0",
+    "php": "0.0.1"
   }
 }
