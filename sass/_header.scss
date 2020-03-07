@@ -1,7 +1,7 @@
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
-    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpeg);
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
     padding: 8rem;
@@ -22,8 +22,10 @@
     }
 
     &__logo {
-        height: 3rem;
+        height: 2.8rem;
         justify-self: center;
+        margin-bottom: 4rem;
+        opacity: .7;
     }
 
     &__btn {
@@ -57,7 +59,7 @@
         align-items: center;
 
         img {
-            height: 2.5rem;
+            height: 3.5rem;
             filter: brightness(70%);
         }
     }
